@@ -1,0 +1,111 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px auto;
+    padding: 30px 50px;
+
+}
+
+.field-group {
+    position: relative;
+    margin: 10px auto;
+}
+
+label {
+    display: block;
+}
+
+.field-group>input {
+    height: 30px;
+    width: 220px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+i.success,
+i.error {
+    visibility: hidden;
+}
+
+.field-group.success input {
+    border: 1.5px solid green;
+    /* box-shadow: 0px 1px 8px 0px green; */
+}
+
+.field-group.error input {
+    border: 1.5px solid red;
+    /* box-shadow: 0px 1px 8px 0px red; */
+}
+
+.field-group.success i.success {
+    visibility: visible;
+    color: green;
+}
+
+.field-group.error i.error {
+    visibility: visible;
+    color: red;
+}
+
+.field-group.success i.error {
+    visibility: hidden;
+}
+
+.field-group.error i.success {
+    visibility: hidden;
+}
+
+.field-group.error {
+    /* visibility: hidden; */
+    color: red;
+}
+
+small {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 5%);
+}
+
+input:focus {
+    border: 1px solid rgb(111, 203, 226);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 30px;
+    line-height: 1.6;
+    padding: 0 10px;
+    background-color: #3d69e2;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+  opacity:0.9;
+  transition: all 1s;
+  color:#111;
+}
