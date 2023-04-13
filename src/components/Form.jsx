@@ -14,6 +14,7 @@ function Form() {
         e.preventDefault();
         setEmail('');
         setName('');
+        alert('form submitted successfully');
         console.log('Submitted:', { email, name, file });
     };
 
