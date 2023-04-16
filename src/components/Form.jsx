@@ -36,7 +36,6 @@ function Form() {
                         </div>
                         <br />
                        <div className='mb-3 form-group'>
-                        
                             <input type="file"  className='form-control'  onChange={handleFileChange} />
                         </div>
                         <br />
