@@ -25,26 +25,26 @@ function Form() {
                 <div className=' form-container col-12 col-md-6'>
                     <form onSubmit={handleSubmit}>
                         <div className=' mb-3 form-group '>
-                      
+
                             <input type="email" className='form-control ' placeholder="Email" value={email} onChange={handleEmailChange} />
 
                         </div>
                         <div className='mb-3 form-group'>
-                        
-                            <input type="text"  className='form-control' placeholder='Name' value={name} onChange={handleNameChange} />
+
+                            <input type="text" className='form-control' placeholder='Name' value={name} onChange={handleNameChange} />
 
                         </div>
                         <br />
-                       <div className='mb-3 form-group'>
-                            <input type="file"  className='form-control'  onChange={handleFileChange} />
+                        <div className='mb-3 form-group'>
+                            <input type="file" className='form-control' onChange={handleFileChange} />
                         </div>
                         <br />
-                        <button className='btn-lg btn btn-primary'  type="submit">Submit</button>
+                        <button className='btn-lg btn btn-primary' type="submit">Submit</button>
                     </form>
                 </div>
-               
-                <div className='form-container col-12 col-sm-6'>
-                    <Card email={email} name ={name}/>
+
+                <div className='form-container w-100 col-12 col-sm-6'>
+                    <Card email={email} name={name} />
                 </div>
 
 
